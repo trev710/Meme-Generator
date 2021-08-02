@@ -27,11 +27,3 @@ function displayRandomMeme(randomImage) { //Displays the random meme's name and 
 }
 
 
-
-
-
-
-//likeButton.addEventListener('click',()=>{
-//})
-
-//dislikeButton.addEventListener('click',()=>{
