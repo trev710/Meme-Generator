@@ -31,7 +31,6 @@ body {
       color: black;
     }
   
-  /*code for the buttons */
   .collapsible {
     background-color: #eee;
     color: #444;
@@ -54,9 +53,6 @@ body {
       overflow: hidden;
       background-color: #f1f1f1;
     }
-  
-  
-  /*copied the code above*/
   
   main {
       float: left;
@@ -96,6 +92,3 @@ body {
       margin-bottom: 10px;
     }
   
-  .description button, input[type="submit"] {
-       //some CSS to implement the Color change we talked about    
-    }
