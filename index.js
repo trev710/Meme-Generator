@@ -1,8 +1,8 @@
 let apiURL = 'https://api.imgflip.com/get_memes'
 
-let likeButton = document.querySelector('.like')
-let dislikeButton = document.querySelector('.dislike')
-let generateNewMeme = document.querySelector('.makeAMeme')
+let likeButton = document.getElementById('like')
+let dislikeButton = document.getElementById('dislike')
+let generateNewMeme = document.getElementById('makeAMeme')
 
 //variable to access the name to change with the new meme
 let memeHeader = document.querySelector('h2')
@@ -13,10 +13,24 @@ let loadApiImage = () => {
     .then(el => {
         let memeData = el.data.memes[3]
         imageInfo(memeData)
-    })
+    });
 }
-
-likeButton.addEventListener('click',()=>{
+let likeCount = 0
+likeButton.addEventListener('click',(e)=>{
+    const likesP = document.querySelector('#likesP')
+    likeCount = likeCount+1
+    if (likeCount === 1){
+      likesP.textContent ='1 like'
+    } else {
+      likesP.textContent = `${likeCount} likes`
+    fetch('http://localhost:3000/memes', {
+    method: "PATCH", 
+    headers: { 'Content-Type': 'application/json'},
+    body: JSON.stringify({
+    likes: likeCount })
+      
+  })
+  }    
 //on click we want to increase a counter
 //we want to patch the likes with a count to the api list
 
