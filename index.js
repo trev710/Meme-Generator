@@ -23,7 +23,7 @@ function chooseRandomMeme(memeData) { //Chooses a random element from the array 
 
 function displayRandomMeme(randomImage) { //Displays the random meme's name and image
     memeImage.src = randomImage.url; //Assigns the meme's url to the image source
-    memeName.innerHTML = randomImage.name; //Assigns the meme's name to the inner HTML of the h2
+    memeName.innerHTML = randomImage.name; //Assigns the meme's name to the inner HTML to the h2
 }
 
 
