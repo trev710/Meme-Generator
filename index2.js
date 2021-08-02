@@ -17,7 +17,7 @@ let loadApiImage = () => {
 }
 let likeCount = 0
 likeButton.addEventListener('click',(e)=>{
-    const likesP = document.querySelector('#likesP')
+    const likesP = document.getElementById('likesP')
     likeCount = likeCount+1
     if (likeCount === 1){
       likesP.textContent ='1 like'
