@@ -1,0 +1,26 @@
+The basic story of your application:
+A user visits the page and sees a randomly generated meme and meme name, and a button that allows them to re-generate a new meme. The user can also like and dislike the memes as they are generated. After liking/disliking the meme, an element (like border) changes color.
+
+
+The core features of your MVP:
+As a user, I want to be able to see a random meme + it’s name on page load, so that I know the meme generator is working / we’re connected to the server.
+As a user, I want to be able to select a generate meme button, so that a random meme generates. >> Is it possible to have a random object display?
+As a user, I want to be able to click a Like button, so that I can tell the webpage that I like the meme.
+As a user, I want to be able to click a Dislike button, so that I can tell the webpage that I dislike the meme. >> maybe remove the meme if dislike is clicked
+
+
+The API data you'll be using and how you'll use it:
+https://imgflip.com/api 
+Sends back meme URLs and meme names
+
+
+Challenges you expect to face:
+Displaying a randomly selected object
+CSS Styling
+Converting the URL to a real URL - Response contains broken URLs… is this because it hasn’t been converted to a JSON object? Example: "url":"https:\/\/i.imgflip.com\/30b1gx.jpg" ---> should be "url":"https:\\i.imgflip.com\30b1gx.jpg" 
+
+
+How you are meeting the requirements of the project:
+Accessing data from a public API
+Running it on a single page / no redirect
+At least 3 event listeners - click, submit, click, DOM content loaded
