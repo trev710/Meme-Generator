@@ -3,20 +3,38 @@
       <meta charset="utf-8" />
       <title>Random Meme Generator</title>
       <link rel="stylesheet" href="style.css">
-      <script defer type="text/javascript" src="index.js"></script>
       
+      <script defer type="text/javascript" src="index.js"></script>
+      <script defer type="text/javascript" src="likebutton.js"></script> <!-- new file -->
+      <script defer type="text/javascript" src="dislikebutton.js"></script> <!-- new file -->
+      <script defer type="text/javascript" src="caption.js"></script> <!-- new file -->
     </head>  
     <body>
       <main>
           <h2>Meme name goes here</h2>
-          <form class="makeAMeme">
+          <form class="makeAMeme"> 
               <img id="meme" alt="meme image goes here">
               <p id='likesP'></p>
+              <ul id="captionListDisplay"></ul> <!-- new element -->
+              <div id="captionsTextBox"></div> <!-- new element -->
+
+              <button id='new'>New Caption</button> <!-- new element -->
+
               <button id="like">Like</button>
               
               <button id="makeAMeme" type="submit">Generate New Meme!</button>
               
               <button id="dislike">Dislike</button>
+
+              <p id="dislikeMessage"></p> <!-- new element -->
+              <br> <!-- new element -->
+              <br> <!-- new element -->
+              <h3>Wall of Shame</h3> <!-- new element -->
+              <div id='listDiv'> <!-- new element -->
+              <button id="reloadList">Refresh the list of disliked memes!</button> <!-- new element -->
+              <ul id="listOfDislikedMemes"></ul> <!-- new element -->
+              </div> <!-- new element -->
+            
           </form>
       </main>
     </body>

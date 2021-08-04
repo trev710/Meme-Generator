@@ -17,10 +17,12 @@ getMemes() //Invokes the function each time the page is loaded
 function chooseRandomMeme(memeData) { //Chooses a random element from the array of memes
     let randomIndex = Math.floor(Math.random() * memeData.length); //Selects a random index value from the array and assigns to the variable
     let randomImage = memeData[randomIndex]; //Selects the element from the array with the matching index value and assigns to the variable
-        displayRandomMeme(randomImage) //Invokes a function that will display the selected meme's image and name
+    displayRandomMeme(randomImage) //Invokes a function that will display the selected meme's image and name
 }
 
 function displayRandomMeme(randomImage) { //Displays the random meme's name and image
     memeImage.src = randomImage.url; //Assigns the meme's url to the image source
     memeName.innerHTML = randomImage.name; //Assigns the meme's name to the inner HTML to the h2
+    
 }
+
