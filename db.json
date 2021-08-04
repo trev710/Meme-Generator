@@ -1,28 +1,19 @@
 {
   "blockedMemes": [
     {
-      "name": "Scared Cat",
+      "name": "They're The Same Picture",
+      "url": "https://i.imgflip.com/2za3u1.jpg",
       "id": 1
     },
     {
-      "name": "Fifa E Call Of Duty",
+      "name": "Third World Skeptical Kid",
+      "url": "https://i.imgflip.com/265k.jpg",
       "id": 2
     },
     {
-      "name": "Fifa E Call Of Duty",
+      "name": "Y'all Got Any More Of That",
+      "url": "https://i.imgflip.com/21uy0f.jpg",
       "id": 3
-    },
-    {
-      "name": "The Most Interesting Man In The World",
-      "id": 4
-    },
-    {
-      "name": "Panik Kalm Panik",
-      "id": 5
-    },
-    {
-      "name": "Marked Safe From",
-      "id": 6
     }
   ]
 }

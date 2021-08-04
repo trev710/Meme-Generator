@@ -3,15 +3,25 @@ const captionBtn = document.getElementById("new");
 const captionDiv = document.getElementById("captionsTextBox");
 
 
-captionBtn.addEventListener('click', (e) => {
-    e.preventDefault(); //Prevents refresh
-    
-    //let newDiv = document.createElement('div');
-    let newTextArea = document.createElement('textarea');
-    captionDiv.appendChild(newTextArea);
-    //form.appendChild(newDiv);
 
-})
+document.addEventListener("DOMContentLoaded", () => {
+    const commentForm = document.getElementById('createComment');
+    commentForm.addEventListener('submit', addToComments);
+});
+function addToComments(e){
+    e.preventDefault();
+    const commentText = e.target.newComment.value
+    const commentList = document.getElementById('commentul')
+    const newComment = document.createElement('li');
+    newComment.innerText = commentText;
+//    const deleteCommentButton = document.createElement('button');
+//    deleteCommentButton.innerText('[ X ]')
+//    newComment.append(deleteCommentButton);
+//    deleteCommentButton.addEventListener('click' , e => {
+//    })
+    commentList.append(newComment)
+    e.target.reset()
+}
 
 
 

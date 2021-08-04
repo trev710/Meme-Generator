@@ -1,12 +1,14 @@
 body {
-    background-color: orangered;
+    /*background-color: orangered;*/
+    background-color: rgb(146, 187, 226);
   }
   
   h1 {
-      font-family: 'Times New Roman', Times, serif
+      font-family: 'Times New Roman', Times, serif;
       font-size: 52px;
       color: #3493d5;
       margin: 10px 0;
+      text-align: center;
   }
   
   ul {
@@ -61,13 +63,13 @@ body {
     }
   
   h2 {
-      font-size: 32px;
+      font-size: 25px;
       text-align: center;
   }
   
   img {
       display:block;
-      height: 500px;
+      height: 400px;
       margin: 0 auto 25px auto;
   }
   
@@ -80,6 +82,7 @@ body {
       margin: 0 auto 50px auto;
       align-items: center;
       text-align: center;
+      
   }
   
   textarea {
@@ -90,5 +93,28 @@ body {
       padding: 5px;
       font-size: 14px;
       margin-bottom: 10px;
+    }
+
+    #buttonDiv {
+      text-align: center;
+      padding-top: 1px;
+      
+
+    }
+
+    h3 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    #listDiv {
+      text-align: center;
+      border: 2px dashed rgb(77, 14, 6);
+      padding-top: 20px;
+    }
+
+    #commentList {
+      text-align: center;
     }
   

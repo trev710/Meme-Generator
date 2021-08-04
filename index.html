@@ -5,37 +5,55 @@
       <link rel="stylesheet" href="style.css">
       
       <script defer type="text/javascript" src="index.js"></script>
-      <script defer type="text/javascript" src="likebutton.js"></script> <!-- new file -->
-      <script defer type="text/javascript" src="dislikebutton.js"></script> <!-- new file -->
-      <script defer type="text/javascript" src="caption.js"></script> <!-- new file -->
+      <script defer type="text/javascript" src="likebutton.js"></script> 
+      <script defer type="text/javascript" src="dislikebutton.js"></script> 
+      <script defer type="text/javascript" src="caption.js"></script> 
     </head>  
     <body>
       <main>
+        <h1>Do you like this meme?</h1> 
           <h2>Meme name goes here</h2>
           <form class="makeAMeme"> 
+
               <img id="meme" alt="meme image goes here">
+              
+              <!-- Like counter -->
               <p id='likesP'></p>
-              <ul id="captionListDisplay"></ul> <!-- new element -->
-              <div id="captionsTextBox"></div> <!-- new element -->
 
-              <button id='new'>New Caption</button> <!-- new element -->
-
+              <!-- Buttons section -->
+              <div id="buttonDiv"> <!-- Wrapped the buttons in a div so it can be repositioned-->
               <button id="like">Like</button>
-              
               <button id="makeAMeme" type="submit">Generate New Meme!</button>
-              
               <button id="dislike">Dislike</button>
+              </div> <!-- Close div -->
 
-              <p id="dislikeMessage"></p> <!-- new element -->
-              <br> <!-- new element -->
-              <br> <!-- new element -->
-              <h3>Wall of Shame</h3> <!-- new element -->
-              <div id='listDiv'> <!-- new element -->
-              <button id="reloadList">Refresh the list of disliked memes!</button> <!-- new element -->
-              <ul id="listOfDislikedMemes"></ul> <!-- new element -->
-              </div> <!-- new element -->
-            
+              <!-- Wall of Shame section-->
+              <p id="dislikeMessage"></p> 
+              <h3>Wall of Shame</h3> 
+              <div id='listDiv'> 
+              <button id="reloadList">Refresh the list of disliked memes!</button> 
+              <ul id="listOfDislikedMemes"></ul> 
+              </div> 
+
           </form>
+
+          <!-- Comments section -->
+          <form id="createComment" action="" method="POST">
+            <label for="newComment">Comments:</label>
+            <input
+            type="text"
+            id="newComment"
+            name="newComment"
+            placeholder="Enter Comment Here"
+            />
+            <input type="submit" value="Create New Comment"/>
+          </form>
+          <div id='commentList'>
+            <h2>Comments</h2>
+            <ul id="commentul"></ul>
+          </div>
+
+
       </main>
     </body>
   </html>

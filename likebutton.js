@@ -1,6 +1,7 @@
 let likeButton = document.getElementById("like");
 
-let likeCount = 0
+let likeCount = 0;
+likeCount.id = 'likeCount';
 likeButton.addEventListener('click',(e)=>{
     e.preventDefault()
     const likesP = document.querySelector('#likesP')

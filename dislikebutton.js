@@ -12,20 +12,25 @@ const listDiv = document.getElementById('listDiv');
 
 //'Generate New Meme!' button
 newMemeButton.addEventListener('click', (e) => { //Displays a new random meme
-    e.preventDefault(); //Prevents refresh
-    getMemes(); //Gets a new random meme
-    dislikeMessage.innerHTML = ''; //Removes the dislike message if currently displaying
+    location.reload(); //Not ideal, but must use this in order to reset the likes and comments
+    //e.preventDefault(); //Prevents refresh
+    //getMemes(); //Gets a new random meme
+    //dislikeMessage.innerHTML = ''; //Removes the dislike message if currently displaying
+    //document.getElementById('likesP').innerHTML = ''; //Hides it but doesn't fully clear*****
+    
 })
 
 
 //'Dislike' button 
 dislikeButton.addEventListener('click', (e) => {
     e.preventDefault();
-    dislikeMessage.innerHTML = 'Ouch! We added this meme to the "Disliked Memes" list so it can be reviewed for removal.';
+    dislikeMessage.innerHTML = 'Ouch! We added this meme to the WALL OF SHAME!';
     let currentMemeObj = {
-        name:memeName.innerHTML
+        name:memeName.innerHTML,
+        url:memeImage.src //NEWWWWWW
     }
     addToDislikedMemes(currentMemeObj);
+    
 })
 
 
@@ -67,10 +72,15 @@ const getDislikedMemes = () => {
 //Displays the list of disliked memes on the page
 function displayDislikedMemes(dislikedMemes) {
     dislikedMemes.forEach(meme => {
-        dislikedMemeListItem = document.createElement('li');
-        dislikedMemeListItem.innerHTML = meme.name;
-        listOfDislikedMemes.appendChild(dislikedMemeListItem);
+        //dislikedMemeListItem = document.createElement('li'); //Decided to display the image instead
+        dislikedMemeListImage = document.createElement('img');
+        //dislikedMemeListItem.innerHTML = meme.name; //Decided to display the image instead
+        dislikedMemeListImage.src = meme.url;
+        listOfDislikedMemes.appendChild(dislikedMemeListImage);
+        
     });
 }
+
+
 
 
