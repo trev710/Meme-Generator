@@ -76,6 +76,8 @@ function displayDislikedMemes(dislikedMemes) {
         dislikedMemeListImage = document.createElement('img');
         //dislikedMemeListItem.innerHTML = meme.name; //Decided to display the image instead
         dislikedMemeListImage.src = meme.url;
+        dislikedMemeListImage.style.width = '350px';
+        dislikedMemeListImage.style.padding = '10px';
         listOfDislikedMemes.appendChild(dislikedMemeListImage);
         
     });
