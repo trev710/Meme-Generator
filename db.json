@@ -1,9 +1,29 @@
 {
   "blockedMemes": [
     {
-      "name": "\"Brace Yourselves X is Coming\"",
-      "url": "https://i.imgflip.com/1bhm.jpg",
+      "name": "\"UNO Draw 25 Cards\"",
+      "url": "https://i.imgflip.com/3lmzyx.jpg",
       "id": 1
+    },
+    {
+      "name": "\"Sad Pablo Escobar\"",
+      "url": "https://i.imgflip.com/1c1uej.jpg",
+      "id": 2
+    },
+    {
+      "name": "\"The Scroll Of Truth\"",
+      "url": "https://i.imgflip.com/21tqf4.jpg",
+      "id": 3
+    },
+    {
+      "name": "\"Woman Yelling At Cat\"",
+      "url": "https://i.imgflip.com/345v97.jpg",
+      "id": 4
+    },
+    {
+      "name": "\"Y'all Got Any More Of That\"",
+      "url": "https://i.imgflip.com/21uy0f.jpg",
+      "id": 5
     }
   ]
 }

@@ -231,8 +231,8 @@ nav ul li {
   padding: 10px;
   cursor: move;
   z-index: 10;
-  background-color: gold;
-  color: #444;
+  background-color: transparent;
+  color:#3493d5;
   font-size: 12px 
 }
 
@@ -240,7 +240,7 @@ nav ul li {
 #textarea {
   -moz-appearance: textfield-multiline;
   -webkit-appearance: textarea;
-  border: 1px solid gray;
+  /* border: 1px dotted rgba(232, 236, 241, .25); */
   /*font: medium -moz-fixed;*/
   /*font: -webkit-small-control;*/
   height: 68px;
@@ -248,11 +248,19 @@ nav ul li {
   padding: 2px;
   resize: both;
   width: auto;
-  color: black;
-  background: white;
+  color: gold;
+  background: transparent;
 }
 
+.footer {
+  text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
 
+a {
+  color:gold;
+}
 
   
 
