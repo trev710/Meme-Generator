@@ -19,6 +19,7 @@ function addToComments(e){
 //    newComment.append(deleteCommentButton);
 //    deleteCommentButton.addEventListener('click' , e => {
 //    })
+    newComment.style.padding = "10px";
     commentList.append(newComment)
     e.target.reset()
 }

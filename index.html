@@ -8,15 +8,34 @@
       <script defer type="text/javascript" src="likebutton.js"></script> 
       <script defer type="text/javascript" src="dislikebutton.js"></script> 
       <script defer type="text/javascript" src="caption.js"></script> 
+      <script defer type="text/javascript" src="textbox.js"></script>
     </head>  
     <body>
       <div class="wrapper">
-      <header class="header">Do you like this meme? (an app)</header>
+      <header class="header">
+        
+      <img src="images/header.png" id="headerImage">
+      </header>
       
       <columnA> 
-        <div id="generateNewBtn"><button id="makeAMeme" type="submit">Generate New Meme!</button></div>
-        <h2>Meme name goes here</h2>
-          
+        <!-- Generate random meme section -->
+          <div id="generateNewBtn"><button id="makeAMeme" type="submit">Generate New Meme!</button></div>
+          <h2>Meme name goes here</h2>
+<!-- Draggable DIV -->
+<div id="textBox">
+  <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
+  <!--<div id="textHead">Click here to move</div>-->
+  <header id="textBoxheader">
+    Add a caption and click here to drag!
+  </header>
+  <div id="textarea" contenteditable="true"></div>
+    <p></p>
+    <p></p>
+    <p></p>
+</div>
+
+
+
           <form class="makeAMeme"> 
             
               <img id="meme" alt="meme image goes here">
@@ -31,6 +50,17 @@
               </div> <!-- Close div -->
               <p id="dislikeMessage"></p>
           </form>
+
+          
+
+
+
+
+
+
+
+
+          
 
           <!-- Comments section -->
           <form id="createComment" action="" method="POST">
@@ -51,8 +81,11 @@
       </columnA>
 
       <columnB> 
-        <!-- Wall of Shame section--> 
-        <h3>Wall of Shame</h3> 
+        <!-- Wall of Shame section -->  
+        <!-- <h3>Wall of Shame</h3> -->
+        <div id="wallHeaderDiv">
+        <img src="images/wallheader.png" id="wallHeader">
+        </div>
         <div id='listDiv'> 
         <button id="reloadList">Refresh the list of disliked memes!</button> 
         <ul id="listOfDislikedMemes"></ul> 

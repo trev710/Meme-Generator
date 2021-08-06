@@ -5,7 +5,8 @@
 body {
     margin: 40px;
     font-family: Verdana, Arial, Helvetica, sans-serif;
-    background-color: rgb(146, 187, 226);
+    background-color: rgb(174, 203, 230);
+    
 }
 
 .wrapper {
@@ -49,7 +50,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* We need to set the widths used on floated items back to auto, and remove the bottom margin because grids create gaps */
+/* This sets the widths used on floated items back to auto, and remove the bottom margin because grids create gaps */
 @supports (display: grid) {
     .wrapper > * {
       width: auto;
@@ -67,11 +68,16 @@ body {
   width: 600px;
 } */
 
+
 .header {
-  font-size: 40px;
-  color: gold;
   text-align: center;
   font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+#headerImage {
+  width: 900px;
+  text-align: center;
 }
 
 
@@ -83,17 +89,21 @@ h1 {
       text-align: center;
 }
 
+
+/* Button that GETs a new randomized meme and displays it */
 #generateNewBtn {
   text-align: center;
 }
 
-/* Meme name and Comments header */
+
+/* Impacts the meme name and comments headers */
 h2 {
     font-size: 25px;
     text-align: center;
 }
 
-/* Meme form and Comment form */
+
+/* All forms - impacts the meme form and comment form */
 form {
   /*width: 450px;
   margin: 0 auto 50px auto;*/
@@ -101,12 +111,14 @@ form {
   text-align: center;
 }
 
-/* Main meme image - the meme wall images are created via Javascript */
+
+/* Main meme image - the meme wall of shame images are created via Javascript */
 img {
   /*display:block;*/
   width: 500px;
   /*margin: 0 auto 25px auto;*/
 }
+
 
 /* Dislike message text and like counter (like counter also has an ID) */
 p {
@@ -121,13 +133,6 @@ p {
 }
 
 
-/* Wall of Shame Header */
-h3 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 8px;
-}
- 
 /* Like counter text */
 #likesP {
   font-family: Verdana, Arial, Helvetica, sans-serif;
@@ -138,14 +143,35 @@ h3 {
   color: red;
 }
 
+
+/* Wall of Shame Header */
+h3 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+#wallHeaderDiv {
+  text-align: center;
+}
+
+#wallHeader {
+  width: 300px;
+}
+
+
 /* Wall of Shame List of Memes */
 #listDiv {
   text-align: center;
   padding-top: 20px;
 }
 
+#helperText {
+  font-size: 10px;
+}
 
-/* Used by the comments section */
+
+/* Comments section */
 
 #commentList {
       text-align: center;
@@ -153,7 +179,7 @@ h3 {
       /* border-color: gold; */
       /* border-style: solid; */
       font-size: large;
-      font-family: Verdana, Arial, Helvetica, sans-serif
+      font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
 #commentList h2 {
@@ -183,6 +209,50 @@ nav ul li {
       cursor: pointer;
 }
     
+
+/* Caption box section */
+#textBox {
+  position: absolute;
+  z-index: 9;
+  /*background-color: #F1F1F1;*/
+  /*border: 1px solid #D3D3D3;*/
+  text-align: center;
+  width: auto;
+}
+/*#textHead {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff; 
+}*/
+
+#textBoxHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: gold;
+  color: #444;
+  font-size: 12px 
+}
+
+
+#textarea {
+  -moz-appearance: textfield-multiline;
+  -webkit-appearance: textarea;
+  border: 1px solid gray;
+  /*font: medium -moz-fixed;*/
+  /*font: -webkit-small-control;*/
+  height: 68px;
+  overflow: auto;
+  padding: 2px;
+  resize: both;
+  width: auto;
+  color: black;
+  background: white;
+}
+
+
 
   
 

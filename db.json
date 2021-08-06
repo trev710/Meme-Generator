@@ -1,34 +1,9 @@
 {
   "blockedMemes": [
     {
-      "name": "\"Futurama Fry\"",
-      "url": "https://i.imgflip.com/1bgw.jpg",
+      "name": "\"Brace Yourselves X is Coming\"",
+      "url": "https://i.imgflip.com/1bhm.jpg",
       "id": 1
-    },
-    {
-      "name": "\"Doge\"",
-      "url": "https://i.imgflip.com/4t0m5.jpg",
-      "id": 2
-    },
-    {
-      "name": "\"Left Exit 12 Off Ramp\"",
-      "url": "https://i.imgflip.com/22bdq6.jpg",
-      "id": 3
-    },
-    {
-      "name": "\"Left Exit 12 Off Ramp\"",
-      "url": "https://i.imgflip.com/22bdq6.jpg",
-      "id": 4
-    },
-    {
-      "name": "\"Left Exit 12 Off Ramp\"",
-      "url": "https://i.imgflip.com/22bdq6.jpg",
-      "id": 5
-    },
-    {
-      "name": "\"Third World Success Kid\"",
-      "url": "https://i.imgflip.com/265j.jpg",
-      "id": 6
     }
   ]
 }
